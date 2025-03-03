@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Installing zsh and fzf..."
-sudo apt install fzf zsh
+echo "Installing zsh, fzf and other goodies..."
+sudo apt install -y fzf zsh neofetch vim
 
 echo "Installing AWS CLI..."
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
@@ -17,3 +17,6 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
+echo "What's next:"
+echo "1. Login your GitHub account through GH CLI."
+echo "2. Clone the repo: git clone https://github.com/mchlbataller/scripts"
